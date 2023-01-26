@@ -16,20 +16,18 @@ developed by:v.sreeja
 register number:22004463
 
 import pandas as pd
-from sklearn import linear_model
-df=pd.read_csv("car.csv")
-x=df[['Weight','Volume']]
-y=df['CO2']
-regr=linear_model.LinearRegression()
-regr.fit(x,y)
-print("Coefficient:",regr.coef_)
-print("Intercept:",regr.intercept_)
-predictedCO2=regr.predict([[3300,1300]])
-print("Predicted CO@ for the corresponding weight and volume",predictedCO2)
+df = pd.read_csv('nba.csv')
+print(df.head(10))
+print(df.tail())
+print("column",len(df.axes[0]))
+print("rows",len(df.axes[1]))
+
 
 ```
 ## OUTPUT:
-![output](Screenshot%20from%202023-01-26%2010-20-29.png)
+![output](Screenshot%20from%202023-01-26%2015-04-32.png)
+
+
 
 ## RESULT:
 Thus a program to read the contents of csv file using the python programming language.
